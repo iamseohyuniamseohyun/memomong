@@ -185,7 +185,7 @@ app.post("/delete_process", (req, res) => {
               <p>${rows[i].created_at}</p>
               <div class="button-container">
                 <button class="del" onclick="del(${rows[i].id})">삭제</button>
-                <button class="cor" onclick="cor()">수정</button>
+                <button class="cor" onclick="cor(${rows[i].id})">수정</button>
               </div>
             </div>`;
           }
