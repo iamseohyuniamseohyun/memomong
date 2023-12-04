@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
         font-family: 'NanumSquareNeo-Variable';
         }
         body {
-        background: url('https://port-0-memomong-1gksli2alpq681us.sel4.cloudtype.app:3002/image.png') no-repeat center center fixed;
+        background: url('${req.hostname}/image.png') no-repeat center center fixed;
         background-size: cover;
         }
 
@@ -120,7 +120,7 @@ app.get("/", (req, res) => {
             title,
             content
           };
-          fetch('http://localhost:3002/memo', {
+          fetch('${req.hostname}/memo', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
