@@ -132,7 +132,7 @@ app.get("/", (req, res) => {
         }
         
         function moveToMemo() {
-          window.location.href = 'http://localhost:3002/memo';
+          window.location.href = '/memo';
         }
       </script>
     </body>
