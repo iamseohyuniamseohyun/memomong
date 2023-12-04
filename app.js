@@ -420,6 +420,6 @@ app.get("/memo", (req, res) => {
 });
 
 
-app.listen(3002, () => {
+app.listen(80, () => {
   console.log("http://localhost:3002");
 });
