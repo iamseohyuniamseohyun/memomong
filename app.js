@@ -127,7 +127,8 @@ app.get("/", (req, res) => {
             },
             body: JSON.stringify(memo)
           });
-          
+          document.querySelector('#title').value = ''
+          document.querySelector('#content').value = ''
           alert('저장되었습니다.');
         }
         
