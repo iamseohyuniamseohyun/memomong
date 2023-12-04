@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
         font-family: 'NanumSquareNeo-Variable';
         }
         body {
-        background: url('${req.hostname}/image.png') no-repeat center center fixed;
+        background: url('/image.png') no-repeat center center fixed;
         background-size: cover;
         }
 
@@ -120,7 +120,7 @@ app.get("/", (req, res) => {
             title,
             content
           };
-          fetch('${req.hostname}/memo', {
+          fetch('/memo', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
